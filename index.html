@@ -1,410 +1,637 @@
 <!doctype html>
-
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
 
-<meta name="description"
-   content="JASS Punjabi Aksharantar Explorer — a desktop workspace for Punjabi Roman-Gurmukhi transliteration, corpus exploration and language research.">
+  <meta charset="utf-8">
 
-<meta name="theme-color" content="#070b18">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
 
-<title>JASS Punjabi Aksharantar Explorer</title>
+  <meta
+    name="description"
+    content="JASS Punjabi Aksharantar Explorer — a desktop workspace for Punjabi Roman-Gurmukhi transliteration, corpus exploration and language research."
+  >
 
-<link rel="stylesheet" href="style.css">
+  <meta
+    name="theme-color"
+    content="#070b18"
+  >
+
+  <meta
+    property="og:title"
+    content="JASS Punjabi Aksharantar Explorer"
+  >
+
+  <meta
+    property="og:description"
+    content="Bridging scripts, exploring language and preserving Punjabi language data."
+  >
+
+  <meta
+    property="og:image"
+    content="hero.png"
+  >
+
+  <title>JASS Punjabi Aksharantar Explorer</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
 </head>
+
 
 <body>
 
-<div class="container">
+<div class="container" id="top">
 
-<!-- =========================================================
-     NAVIGATION
-========================================================= -->
 
-<nav>
+  <!-- =====================================================
+       NAVIGATION
+  ====================================================== -->
 
-  <a class="brand" href="#top" aria-label="JASS Punjabi Aksharantar Explorer home">
+  <nav>
 
-```
-<span class="brand-mark">ਅ</span>
+    <a
+      class="brand"
+      href="#top"
+      aria-label="JASS Punjabi Aksharantar Explorer"
+    >
 
-<span>
-  JASS Punjabi Aksharantar Explorer
-  <small>LANGUAGE • DATA • RESEARCH</small>
-</span>
-```
+      <span class="brand-mark">ਅ</span>
 
-  </a>
+      <span>
+        JASS Punjabi Aksharantar Explorer
+        <small>LANGUAGE • DATA • RESEARCH</small>
+      </span>
 
-  <div class="navlinks">
+    </a>
 
-```
-<a href="#features">Features</a>
-<a href="#dataset">Dataset</a>
-<a href="#technology">Technology</a>
-<a href="#research">Research</a>
 
-<a
-  class="github"
-  href="https://github.com/Fanu2/JASS-Punjabi-Aksharantar-Explorer"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  GitHub ↗
-</a>
-```
+    <div class="navlinks">
 
-  </div>
+      <a href="#features">
+        Features
+      </a>
 
-</nav>
+      <a href="#dataset">
+        Dataset
+      </a>
 
-<!-- =========================================================
-     HERO
-========================================================= -->
+      <a href="#technology">
+        Technology
+      </a>
 
-<header class="hero" id="top">
+      <a href="#research">
+        Research
+      </a>
 
-<img
-class="hero-art"
-src="hero.png"
-alt="JASS Punjabi Aksharantar Explorer promotional artwork"
+      <!-- CORRECT REPOSITORY LINK -->
+      <a
+        class="github"
+        href="https://github.com/Fanu2/JASS-Punjabi-Aksharantar-Explorer"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub ↗
+      </a>
 
->
-
-</header>
-
-<!-- =========================================================
-     INTRODUCTION
-========================================================= -->
-
-<section class="intro">
-
-  <div class="eyebrow">
-    BRIDGING SCRIPTS • EXPLORING LANGUAGE • PRESERVING HERITAGE
-  </div>
-
-  <h1>
-    Punjabi language data,<br>
-    made explorable.
-  </h1>
-
-  <p class="lead">
-    JASS Punjabi Aksharantar Explorer is a desktop research workspace
-    for exploring Roman ↔ Gurmukhi transliteration data using the
-    Aksharantar corpus.
-  </p>
-
-  <p class="muted">
-    Search words and phrases, inspect transliteration pairs, study examples,
-    understand dataset splits and experiment with Punjabi language data
-    through a clean, local-first interface.
-  </p>
-
-  <div class="actions">
-
-```
-<a
-  class="btn primary"
-  href="https://github.com/Fanu2/JASS-Punjabi-Aksharantar-Explorer"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  View on GitHub →
-</a>
-
-<a class="btn" href="#features">
-  Explore Features ↓
-</a>
-```
-
-  </div>
-
-</section>
-
-<!-- =========================================================
-     FEATURES
-========================================================= -->
-
-<section class="section" id="features">
-
-  <div class="eyebrow">
-    THE WORKSPACE
-  </div>
-
-  <h2>
-    From transliteration to discovery.
-  </h2>
-
-  <p class="muted">
-    Designed for learners, researchers, developers and anyone interested
-    in Punjabi language technology.
-  </p>
-
-  <div class="grid">
-
-```
-<article class="card">
-
-  <div class="icon">↔</div>
-
-  <h3>Roman ↔ Gurmukhi</h3>
-
-  <p>
-    Explore transliteration relationships between Roman input
-    and Gurmukhi output.
-  </p>
-
-</article>
-
-
-<article class="card">
-
-  <div class="icon">⌕</div>
-
-  <h3>Powerful Search</h3>
-
-  <p>
-    Find words, phrases and patterns quickly across the
-    language dataset.
-  </p>
-
-</article>
-
-
-<article class="card">
-
-  <div class="icon">▤</div>
-
-  <h3>Dataset Explorer</h3>
-
-  <p>
-    Inspect records, splits and examples instead of treating
-    the corpus as a black box.
-  </p>
-
-</article>
-
-
-<article class="card">
-
-  <div class="icon">⌘</div>
-
-  <h3>Transliteration Tools</h3>
-
-  <p>
-    Test Roman-to-Gurmukhi conversions and examine real
-    corpus examples.
-  </p>
-
-</article>
-
-
-<article class="card">
-
-  <div class="icon">◈</div>
-
-  <h3>Research Workspace</h3>
-
-  <p>
-    Study language patterns and build intuition from a large
-    structured corpus.
-  </p>
-
-</article>
-
-
-<article class="card">
-
-  <div class="icon">♥</div>
-
-  <h3>Language Learning</h3>
-
-  <p>
-    A practical environment for learners and language
-    enthusiasts to explore Punjabi.
-  </p>
-
-</article>
-```
-
-  </div>
-
-</section>
-
-<!-- =========================================================
-     DATASET
-========================================================= -->
-
-<section class="section" id="dataset">
-
-  <div class="split">
-
-```
-<div>
-
-  <div class="eyebrow">
-    AKSHARANTAR DATA
-  </div>
-
-  <h2>
-    A substantial corpus in a usable workspace.
-  </h2>
-
-  <p class="muted">
-    The project turns a large Punjabi transliteration dataset
-    into something developers and researchers can directly
-    inspect, search and understand.
-  </p>
-
-
-  <div class="stats">
-
-    <div class="stat">
-      <strong>534,841</strong>
-      <span>Total records</span>
     </div>
 
-    <div class="stat">
-      <strong>514,724</strong>
-      <span>Training</span>
+  </nav>
+
+
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+
+  <header class="hero">
+
+    <img
+      class="hero-art"
+      src="hero.png"
+      alt="JASS Punjabi Aksharantar Explorer promotional artwork"
+    >
+
+  </header>
+
+
+
+  <!-- =====================================================
+       INTRODUCTION
+  ====================================================== -->
+
+  <section class="intro">
+
+    <div class="eyebrow">
+      BRIDGING SCRIPTS • EXPLORING LANGUAGE • PRESERVING HERITAGE
     </div>
 
-    <div class="stat">
-      <strong>8,880</strong>
-      <span>Validation</span>
+
+    <h1>
+      Punjabi language data,
+      <br>
+      made explorable.
+    </h1>
+
+
+    <p class="lead">
+      JASS Punjabi Aksharantar Explorer is a desktop research
+      workspace for exploring Roman ↔ Gurmukhi transliteration
+      data using the Aksharantar corpus.
+    </p>
+
+
+    <p class="muted">
+      Search words and phrases, inspect transliteration pairs,
+      study examples, understand dataset splits and experiment
+      with Punjabi language data through a clean, local-first
+      interface.
+    </p>
+
+
+    <div class="actions">
+
+      <!-- CORRECT REPOSITORY LINK -->
+      <a
+        class="btn primary"
+        href="https://github.com/Fanu2/JASS-Punjabi-Aksharantar-Explorer"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View on GitHub →
+      </a>
+
+
+      <a
+        class="btn"
+        href="#features"
+      >
+        Explore Features ↓
+      </a>
+
     </div>
 
-    <div class="stat">
-      <strong>11,237</strong>
-      <span>Test</span>
+  </section>
+
+
+
+  <!-- =====================================================
+       FEATURES
+  ====================================================== -->
+
+  <section
+    class="section"
+    id="features"
+  >
+
+    <div class="eyebrow">
+      THE WORKSPACE
     </div>
 
-  </div>
 
-</div>
-
-
-<div class="quote">
-
-  <p>
-    “From data to deeper understanding.”
-  </p>
-
-  <span>
-    JASS LANGUAGE TECHNOLOGY LAB
-  </span>
-
-</div>
-```
-
-  </div>
-
-</section>
-
-<!-- =========================================================
-     TECHNOLOGY
-========================================================= -->
-
-<section class="section" id="technology">
-
-  <div class="eyebrow">
-    TECHNOLOGY
-  </div>
-
-  <h2>
-    Lightweight. Local. Practical.
-  </h2>
-
-  <p class="muted">
-    Built around a desktop-first workflow so language data remains
-    accessible without requiring heavy cloud infrastructure.
-  </p>
-
-  <div class="stack">
-
-```
-<span class="tag">Python</span>
-<span class="tag">PySide6</span>
-<span class="tag">SQLite</span>
-<span class="tag">Pandas</span>
-<span class="tag">Aksharantar</span>
-<span class="tag">NLP</span>
-<span class="tag">Open Data</span>
-```
-
-  </div>
-
-</section>
-
-<!-- =========================================================
-     RESEARCH / CALL TO ACTION
-========================================================= -->
-
-<section class="section" id="research">
-
-  <div class="eyebrow">
-    WHY IT MATTERS
-  </div>
-
-  <h2>
-    Language technology can preserve access.
-  </h2>
-
-  <p class="lead">
-    Projects like this create a bridge between structured language data,
-    practical software and the people who want to learn, research and
-    build with it.
-  </p>
-
-  <div class="cta">
-
-```
-<div>
-
-  <h3>
-    Explore the source and build on it.
-  </h3>
-
-  <p class="muted">
-    Open source research software from the JASS project family.
-  </p>
-
-</div>
+    <h2>
+      From transliteration to discovery.
+    </h2>
 
 
-<a
-  class="btn primary"
-  href="https://github.com/Fanu2/JASS-Punjabi-Aksharantar-Explorer"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Open Repository →
-</a>
-```
+    <p class="muted">
+      Designed for learners, researchers, developers and
+      anyone interested in Punjabi language technology.
+    </p>
 
-  </div>
 
-</section>
+    <div class="grid">
 
-<!-- =========================================================
-     FOOTER
-========================================================= -->
 
-<footer>
+      <article class="card">
 
-  <span>
-    © 2026 JASS • Punjabi Aksharantar Explorer
-  </span>
+        <div class="icon">
+          ↔
+        </div>
 
-  <span>
-    Language • Data • Research • Built with Python & PySide6
-  </span>
+        <h3>
+          Roman ↔ Gurmukhi
+        </h3>
 
-</footer>
+        <p>
+          Explore transliteration relationships between Roman
+          input and Gurmukhi output.
+        </p>
+
+      </article>
+
+
+
+      <article class="card">
+
+        <div class="icon">
+          ⌕
+        </div>
+
+        <h3>
+          Powerful Search
+        </h3>
+
+        <p>
+          Find words, phrases and patterns quickly across
+          the language dataset.
+        </p>
+
+      </article>
+
+
+
+      <article class="card">
+
+        <div class="icon">
+          ▤
+        </div>
+
+        <h3>
+          Dataset Explorer
+        </h3>
+
+        <p>
+          Inspect records, splits and examples instead of
+          treating the corpus as a black box.
+        </p>
+
+      </article>
+
+
+
+      <article class="card">
+
+        <div class="icon">
+          ⌘
+        </div>
+
+        <h3>
+          Transliteration Tools
+        </h3>
+
+        <p>
+          Test Roman-to-Gurmukhi conversions and examine
+          real corpus examples.
+        </p>
+
+      </article>
+
+
+
+      <article class="card">
+
+        <div class="icon">
+          ◈
+        </div>
+
+        <h3>
+          Research Workspace
+        </h3>
+
+        <p>
+          Study language patterns and build intuition from
+          a large structured corpus.
+        </p>
+
+      </article>
+
+
+
+      <article class="card">
+
+        <div class="icon">
+          ♥
+        </div>
+
+        <h3>
+          Language Learning
+        </h3>
+
+        <p>
+          A practical environment for learners and language
+          enthusiasts to explore Punjabi.
+        </p>
+
+      </article>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       DATASET
+  ====================================================== -->
+
+  <section
+    class="section"
+    id="dataset"
+  >
+
+    <div class="split">
+
+
+      <div>
+
+        <div class="eyebrow">
+          AKSHARANTAR DATA
+        </div>
+
+
+        <h2>
+          A substantial corpus in a usable workspace.
+        </h2>
+
+
+        <p class="muted">
+          The project turns a large Punjabi transliteration
+          dataset into something developers and researchers
+          can directly inspect, search and understand.
+        </p>
+
+
+        <div class="stats">
+
+
+          <div class="stat">
+
+            <strong>
+              534,841
+            </strong>
+
+            <span>
+              Total records
+            </span>
+
+          </div>
+
+
+          <div class="stat">
+
+            <strong>
+              514,724
+            </strong>
+
+            <span>
+              Training
+            </span>
+
+          </div>
+
+
+          <div class="stat">
+
+            <strong>
+              8,880
+            </strong>
+
+            <span>
+              Validation
+            </span>
+
+          </div>
+
+
+          <div class="stat">
+
+            <strong>
+              11,237
+            </strong>
+
+            <span>
+              Test
+            </span>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <div class="quote">
+
+        <p>
+          “From data to deeper understanding.”
+        </p>
+
+        <span>
+          JASS LANGUAGE TECHNOLOGY LAB
+        </span>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       TECHNOLOGY
+  ====================================================== -->
+
+  <section
+    class="section"
+    id="technology"
+  >
+
+    <div class="eyebrow">
+      TECHNOLOGY
+    </div>
+
+
+    <h2>
+      Lightweight. Local. Practical.
+    </h2>
+
+
+    <p class="muted">
+      Built around a desktop-first workflow so language data
+      remains accessible without requiring heavy cloud
+      infrastructure.
+    </p>
+
+
+    <div class="stack">
+
+      <span class="tag">
+        Python
+      </span>
+
+      <span class="tag">
+        PySide6
+      </span>
+
+      <span class="tag">
+        SQLite
+      </span>
+
+      <span class="tag">
+        Pandas
+      </span>
+
+      <span class="tag">
+        Aksharantar
+      </span>
+
+      <span class="tag">
+        NLP
+      </span>
+
+      <span class="tag">
+        Open Data
+      </span>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       RESEARCH
+  ====================================================== -->
+
+  <section
+    class="section"
+    id="research"
+  >
+
+    <div class="eyebrow">
+      WHY IT MATTERS
+    </div>
+
+
+    <h2>
+      Language technology can preserve access.
+    </h2>
+
+
+    <p class="lead">
+      Projects like this create a bridge between structured
+      language data, practical software and the people who
+      want to learn, research and build with it.
+    </p>
+
+
+    <div class="cta">
+
+
+      <div>
+
+        <h3>
+          Explore the source and build on it.
+        </h3>
+
+        <p class="muted">
+          Open source research software from the JASS
+          project family.
+        </p>
+
+      </div>
+
+
+      <!-- CORRECT REPOSITORY LINK -->
+      <a
+        class="btn primary"
+        href="https://github.com/Fanu2/JASS-Punjabi-Aksharantar-Explorer"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open Repository →
+      </a>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       PROJECT LINKS
+  ====================================================== -->
+
+  <section class="section project-links">
+
+    <div class="eyebrow">
+      PROJECT
+    </div>
+
+
+    <h2>
+      Explore JASS Punjabi Aksharantar Explorer.
+    </h2>
+
+
+    <p class="muted">
+      Explore the source code, documentation and project
+      development on GitHub.
+    </p>
+
+
+    <div class="actions">
+
+      <!-- CORRECT REPOSITORY -->
+      <a
+        class="btn primary"
+        href="https://github.com/Fanu2/JASS-Punjabi-Aksharantar-Explorer"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub Repository ↗
+      </a>
+
+
+      <!-- CORRECT GITHUB PAGES SITE -->
+      <a
+        class="btn"
+        href="https://fanu2.github.io/JASS-Punjabi-Aksharantar-Explorer/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Live Project Page ↗
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer>
+
+    <span>
+      © 2026 JASS • Punjabi Aksharantar Explorer
+    </span>
+
+
+    <span>
+      Language • Data • Research • Built with Python & PySide6
+    </span>
+
+  </footer>
+
 
 </div>
 
 </body>
+
 </html>
